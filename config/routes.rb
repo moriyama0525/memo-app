@@ -5,5 +5,6 @@ Rails.application.routes.draw do
     delete "/memos/:id",to:"memos#destroy"
     get "/memos/:id/edit",to:"memos#edit"
     patch "/memos/:id",to:"memos#update"
+    get "category/:id",to:"categories#show"
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
