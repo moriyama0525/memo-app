@@ -1,0 +1,8 @@
+<h3>新規ユーザー登録画面</h3>
+<%= form_tag ("/complete") do %>
+    名前
+    <%= text_field :user,:name %>
+    パスワード
+    <%= text_field :user,:password %>
+    <%= submit_tag "登録" %>
+<%end%>

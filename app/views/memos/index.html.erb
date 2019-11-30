@@ -1,3 +1,12 @@
+<% if flash[:user] %>
+  <p><%= flash[:user] %></p>
+<% end %>
+<% if flash[:success] %>
+  <p><%= flash[:success] %></p>
+<% end %>
+<% if flash[:false] %>
+  <p><%= flash[:false] %></p>
+<% end %>
 <h3>Memo List</h3>    
 <% @memos.each do |memo|%>
     <div class="col-sm-4">

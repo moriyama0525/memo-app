@@ -1,0 +1,8 @@
+<h3>ログイン画面</h3>
+<%= form_tag ("/user_login") do %>
+    名前
+    <%= text_field :user,:name %>
+    パスワード
+    <%= text_field :user,:password %>
+    <%= submit_tag "ログイン" %>
+<%end%>
