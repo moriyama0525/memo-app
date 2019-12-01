@@ -10,5 +10,6 @@ Rails.application.routes.draw do
     post "/complete",to:"memos#complete"
     get "/login" ,to:"memos#login"
     post "/user_login",to:"memos#user_login"
+    get "/search",to:"memos#search"
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

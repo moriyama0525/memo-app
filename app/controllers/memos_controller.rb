@@ -46,4 +46,8 @@ class MemosController < ApplicationController
         end
         redirect_to "/"
     end
+    def search
+        
+        redirect_to "/"
+    end
 end
