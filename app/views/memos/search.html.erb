@@ -1,0 +1,18 @@
+<h3><%= params[:search] %>で検索した結果</h3>
+<% @search_memo.each do |memo|%>
+    <div class="col-sm-4">
+        <div class="panel panel-warning">
+            <div class="panel-heading">
+                <h4><%= memo.title %></h4>
+                <%= memo.category.name %>
+                <div class="buttons">
+                    <a href="/memos/<%= memo.id %>" data-method="delete"><span class="glyphicon glyphicon-trash"></span></a>
+                    <a href="/memos/<%= memo.id %>/edit"><span class="glyphicon glyphicon-pencil"></span></a>
+                </div>
+            </div>
+            <div class="panel-body">
+                <%= memo.body %>
+            </div>
+        </div>
+    </div>
+<% end %>
