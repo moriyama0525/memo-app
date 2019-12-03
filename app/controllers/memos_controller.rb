@@ -47,7 +47,6 @@ class MemosController < ApplicationController
         redirect_to "/"
     end
     def search
-        
-        redirect_to "/"
+        @search_memo = Memo.search(params[:search])
     end
 end
